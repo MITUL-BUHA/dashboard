@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Inter", sans-serif;
+    /* color: #7A7E83; */
+    color: #071021;
+    background-color: #e8e9ebc0;
+    margin-left: 100px;
+    position: relative;
+}
+a{
+    text-decoration: none;
+    color: #071021;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+header{
+    box-shadow: 0 3px 16px rgba(0, 0, 0, 0.02);
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.src-btn{
+    font-size: 21px;
+    height: auto;
+    width: auto;
+    right: auto;
+    left: 0;
+    bottom: 1px;
+}
+.right-contain .lang .img a{
+    color: #071021;
+    font-size: 14px;
+    font-weight: 600;
+}
+.icon > div >a{
+    font-size: 24px;
+    color: #071021;
+}
+.logo a{
+    color: #071021;
+    font-size: 14px;
+    font-weight: 600;
+}
+.menu-mobile{
+    width: 100px;
+    overflow: hidden;
+    z-index: 999;
+    transition: width 0.3s linear;
+}
+.d-hide{
+    display: none;
+}
+.menu-mobile:hover{
+    width: 300px;
+}
+.menu-mobile:hover .main-menu-icon{
+    order: 2;
+}
+.menu-mobile:hover .main-logo{
+    order: 1;
+}
+.menu-mobile:hover .d-hide{
+    display: block;
+    transition: 0.3s linear;
+}
+.top-pannel{
+    box-shadow: 0 3px 16px #0000000d;
+    position: sticky;
+    top: 0;
+}
+.nav-area{
+    background-color: #fcfcfc;
+    overflow-y: scroll;
+    height: 87vh;
+    z-index: 1;
+    scrollbar-width: none;
+}
+.nav-area ul> li{
+    font-size: 14px;
+    color: #071021;
+}
+.nav-area ul li.active a{
+    font-size: 14px;
+    color: #0d4bc1;
+}
+.nav-menu .menu-item .menu-icon{
+    width: 40px;
+    height: 40px;
+    font-size: 1.3em;
+    line-height: 40px;
+    border-radius: 8px;
+    color: #7A7E83;
+    /* color: #0d4bc1; */
+    background-color: #ffffff;
+    box-shadow: 0 3px 12px #00000014;
+}
+.nav-area .nav-menu .menu-title a{
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #9C9DA1;
+    pointer-events: none;
+}
+.gd{
+    position: relative;
+    background: linear-gradient(0deg, black 0%, rgba(255, 255, 255, 0) 100%), url(../img/col-50-bg1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 28%;
+    border-radius: 15px;
+}
+.sub-heading a{
+    font-size: 10px;
+}
+.date{
+    font-size: 12px;
+}
+.countdown{
+    border-radius: 15px;
+    background: url(../img/col-50-bg2.webp) no-repeat center;
+    background-size: cover;
+}
+.number{
+    font-size: 38px;
+    height: 50px;
+}
+.lable{
+    font-size: 14px;
+}
+.chart{
+    border-radius: 15px;
+    height: 398px;
+}
+.cou{
+    border-radius: 15px;
+}
+article a img{
+    border-radius: 15px 15px 0 0;
+}
+.pill{
+    left: 20px;
+    top: 20px;
+    font-size: 10px;
+}
+.light{
+    color: #7A7E83;
+    font-size: 13px;
+}
+.tech{
+    background: url(../img/tech-bg.jpg) no-repeat center;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    padding-top: 20%;
+}
+.timebar{
+    background: #2d3036;
+    height: 5px;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.volbar{
+    background: #8cc80c;
+    height: 5px;
+    width: 40px;
+    border-radius: 5px;
+    display: block;
+    cursor: pointer;
+}
+.job, .news{
+    border-radius: 15px;
+}
+.news-img{
+    background: url(../img/news1.jpg) no-repeat center;
+    background-size: cover;
+}
+.news-img2{
+    background: url(../img/news2.jpg) no-repeat center;
+    background-size: cover;
+}
+.news-img3{
+    background: url(../img/news3.jpg) no-repeat center;
+    background-size: cover;
+}
+.round-corner{
+    border-radius: 15px;
+}
+.warning{
+    background: url(../img/warning-bg.png) no-repeat center,#FB582A;
+    background-size: cover;
+}
+.small-round-corner{
+    border-radius: 8px;
+}
+.options a{
+    background-color: #f1f3f6;
+    font-size: 10px;
+}
+.cal-img img{
+    border-radius: 15px 15px 0 0;
+}
+table caption{
+    color: #071021;
+    font-size: 20px;
+    font-weight: 600;
+}
+table th{
+    padding: 8px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
+}
+table td{
+    color: #7A7E83; 
+    font-size: 14px;
+    padding: 7px;
+    text-align: center;
+}
+.demo-tabs{
+    transform: translateY(-50%);
+    display: block;
+    width: 60px;
+    text-align: center;
+}
+.demo-tabs a{
+    display: block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    position: relative;
+}

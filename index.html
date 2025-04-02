@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anesta</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:wght@400;500;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/8908aa9ba1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../index/css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="d-flex justify-content-between align-items-center bg-light mx-3 pt-2">
+            <div class="left-contain px-3">
+                <div class="search ">
+                    <form action="">
+                        <button class="src-btn border-0"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        <input type="text" class="border-0 ps-2" name="" id="" placeholder="Start typing to search...">
+                    </form>
+                </div>
+            </div>
+            <div class="right-contain d-flex justify-content-end align-items-center px-3">
+                <div class="lang">
+                    <div class="img">
+                        <a href="3">
+                            <img src="img/lang-img.webp" alt="" width="27px" height="27px">
+                            <span class="lang-title ms-2">English</span>
+                            <i class="fa fa-angle-down ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="icon d-flex ms-5">
+                    <div class="mess">
+                        <a href="#">
+                            <i class="fa fa-comment"></i>
+                        </a>
+                    </div>
+                    <div class="noti ms-3">
+                        <a href="#">
+                            <i class="fa fa-bell"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="logo d-flex ms-4 my-2">
+                    <a href="#">
+                        <span>
+                            <img src="img/logo.jpg" alt="" class="rounded-circle">
+                        </span>
+                        <span class="ms-2">Hi,</span>
+                        <span>Jack</span>
+                        <i class="fa fa-angle-down ms-1"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="menu-mobile position-fixed top-0 start-0">
+        <div class="menu-mobile-inner">
+            <div class="top-pannel d-flex justify-content-between align-items-center px-4 py-4 bg-white">
+                <a href="#" class="ps-4 main-menu-icon">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <a href="#" class="d-hide main-logo">
+                    <img src="img/main-logo.webp" alt="">
+                </a>
+            </div>
+            <nav class="nav-area p-4">
+                <ul class="nav-menu ps-3 w-100">
+                    <li class="menu-item active d-flex align-items-center">
+                        <div class="menu-icon d-flex justify-content-center align-items-center text-primary">
+                            <i class="fa-solid fa-house border-0"></i>
+                        </div>
+                        <a href="#" class="ps-4 d-flex justify-content-between w-100">
+                            <span class="d-hide">Home Pages</span>
+                            <span class="d-hide"><i class="fa-solid fa-angle-right"></i></span>
+                        </a>
+                    </li>
+                    <li class="menu-title mt-3">
+                        <a href="#" class="pt-3 pb-1 d-block">
+                            <span class="d-hide">Community</span>
+                        </a>
+                    </li>
+                    <li class="menu-item mt-3 d-flex align-items-center">
+                        <div class="menu-icon d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-book"></i>
+                        </div>
+                        <a href="#" class="ps-4 py-2 d-flex justify-content-between w-100">
+                            <span class="d-hide">Knowledge Base</span>
+                        </a>
+                    </li>
+                    <li class="menu-item mt-3 d-flex align-items-center">
+                        <div class="menu-icon d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-location-arrow"></i>
+                        </div>
+                        <a href="#" class="ps-4 py-2 d-flex justify-content-between w-100">
+                            <span class="d-hide">Activity</span>
+                        </a>
+                    </li>
+                    <li class="menu-item mt-3 d-flex align-items-center">
+                        <div class="menu-icon d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <a href="#" class="ps-4 py-2 d-flex justify-content-between w-100">
+                            <span class="d-hide">Messages</span>
+                        </a>
+                    </li>
+                    <li class="menu-item mt-3 d-flex align-items-center">
+                        <div class="menu-icon d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <a href="#" class="ps-4 py-2 d-flex justify-content-between w-100">
+                            <span class="d-hide">Members</span>
+                        </a>
+                    </li>
+                    <li class="menu-item mt-3 d-flex align-items-center">
+                        <div class="menu-icon d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+                        <a href="#" class="ps-4 py-2 d-flex justify-content-between w-100">
+                            <span class="d-hide">Groups</span>
+                        </a>
+                    </li>
+                    <li class="menu-item mt-3 d-flex align-items-center">
+                        <div class="menu-icon d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+                        <a href="#" class="ps-4 py-2 d-flex justify-content-between w-100">
+                            <span class="d-hide">Forums</span>
+                        </a>
+                    </li>
+                    <li class="menu-item mt-3 d-flex align-items-center">
+                        <div class="menu-icon d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-calendar-days"></i>
+                        </div>
+                        <a href="#" class="ps-4 py-2 d-flex justify-content-between w-100">
+                            <span class="d-hide">Events</span>
+                            <span class="d-hide"><i class="fa-solid fa-angle-right"></i></span>
+                        </a>
+                    </li>
+                    <li class="menu-item mt-3 d-flex align-items-center">
+                        <div class="menu-icon d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-file"></i>
+                        </div>
+                        <a href="#" class="ps-4 py-2 d-flex justify-content-between w-100">
+                            <span class="d-hide">Documents</span>
+                        </a>
+                    </li>
+                    <li class="menu-title mt-3">
+                        <a href="#" class="pt-3 pb-1 d-block">
+                            <span class="d-hide">E-Learning</span>
+                        </a>
+                    </li>
+                    <li class="menu-item mt-3 d-flex align-items-center">
+                        <div class="menu-icon d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <a href="#" class="ps-4 py-2 d-flex justify-content-between w-100">
+                            <span class="d-hide">LearnDash</span>
+                            <span class="d-hide"><i class="fa-solid fa-angle-right"></i></span>
+                        </a>
+                    </li>
+                    <li class="menu-item mt-3 d-flex align-items-center">
+                        <div class="menu-icon d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+                        <a href="#" class="ps-4 py-2 d-flex justify-content-between w-100">
+                            <span class="d-hide">LearnPress</span>
+                            <span><i class="fa-solid fa-angle-right"></i></span>
+                        </a>
+                    </li>
+                    <li class="menu-title mt-3">
+                        <a href="#" class="pt-3 pb-1 d-block">
+                            <span class="d-hide">WP Job Manager</span>
+                        </a>
+                    </li>
+                    <li class="menu-item mt-3 d-flex align-items-center">
+                        <div class="menu-icon d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <a href="#" class="ps-4 py-2 d-flex justify-content-between w-100">
+                            <span class="d-hide">All Jobs</span>
+                        </a>
+                    </li>
+                    <li class="menu-item mt-3 d-flex align-items-center">
+                        <div class="menu-icon d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-clipboard"></i>
+                        </div>
+                        <a href="#" class="ps-4 py-2 d-flex justify-content-between w-100">
+                            <span class="d-hide">Job Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="menu-item mt-3 d-flex align-items-center">
+                        <div class="menu-icon d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-arrows-spin"></i>
+                        </div>
+                        <a href="#" class="ps-4 py-2 d-flex justify-content-between w-100">
+                            <span class="d-hide">Resumes</span>
+                        </a>
+                    </li>
+                    <li class="menu-item mt-3 d-flex align-items-center">
+                        <div class="menu-icon d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-clipboard"></i>
+                        </div>
+                        <a href="#" class="ps-4 py-2 d-flex justify-content-between w-100">
+                            <span class="d-hide">Candidate Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="menu-item mt-3 d-flex align-items-center">
+                        <div class="menu-icon d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-pen"></i>
+                        </div>
+                        <a href="#" class="ps-4 py-2 d-flex justify-content-between w-100">
+                            <span class="d-hide">Post a Job</span>
+                        </a>
+                    </li>
+                    <li class="menu-title mt-3">
+                        <a href="#" class="pt-3 pb-1 d-block">
+                            <span class="d-hide">Other</span>
+                        </a>
+                    </li>
+                    <li class="menu-item mt-3 d-flex align-items-center">
+                        <div class="menu-icon d-flex justify-content-center align-items-center">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <a href="#" class="ps-4 py-2 d-flex justify-content-between w-100">
+                            <span class="d-hide">Membership</span>
+                            <span class="d-hide"><i class="fa-solid fa-angle-right"></i></span>
+                        </a>
+                    </li>
+                    <li class="menu-item mt-3 d-flex align-items-center">
+                        <div class="menu-icon d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <a href="#" class="ps-4 py-2 d-flex justify-content-between w-100">
+                            <span class="d-hide">Shop</span>
+                        </a>
+                    </li>
+                    <li class="menu-item mt-3 d-flex align-items-center">
+                        <div class="menu-icon d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <a href="#" class="ps-4 py-2 d-flex justify-content-between w-100">
+                            <span class="d-hide">News</span>
+                            <span class="d-hide"><i class="fa-solid fa-angle-right"></i></span>
+                        </a>
+                    </li>
+                    <li class="menu-item mt-3 d-flex align-items-center">
+                        <div class="menu-icon d-flex justify-content-center align-items-center">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <a href="#" class="ps-4 py-2 d-flex justify-content-between w-100">
+                            <span class="d-hide">Charts & Graphs</span>
+                        </a>
+                    </li>
+                    <li class="menu-item mt-3 d-flex align-items-center">
+                        <div class="menu-icon d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-file-pen"></i>
+                        </div>
+                        <a href="#" class="ps-4 py-2 d-flex justify-content-between w-100">
+                            <span class="d-hide">Pages</span>
+                            <span class="d-hide"><i class="fa-solid fa-angle-right"></i></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="page-content py-4 px-3">
+        <div class="content d-flex position-relative m-auto p-auto">
+            <div class="col-50 d-flex col-6">
+                <div class="col-50-contain d-flex align-content-start flex-wrap px-3 w-100">
+                    <div class="gd mb-4 w-100 d-block">
+                        <div class="gd-content p-4 text-light">
+                            <div class="sub-heading rounded-pill bg-primary d-inline">
+                                <span>
+                                    <a class="px-3 py-2 text-uppercase text-light text-center align-middle" href="#">Digital</a>
+                                </span>
+                            </div>
+                            <h3 class="mt-3">
+                                <a href="#" class="text-light">Essential Free Resources for Graphic Designers in 2022</a>
+                            </h3>
+                            <div>Dem ut perspiciatis unde omnis iste natus error sit voluptatem…</div>
+                            <div class="date mt-3">
+                                <span class="pe-2">January 14, 2022</span>
+                                <a href="#" class="pe-2">
+                                    <i class="fa-solid fa-heart text-danger"></i>
+                                    <span class="text-light">35</span>
+                                </a>
+                                <a href="#" class="pe-2">
+                                    <i class="fa-solid fa-comment text-warning"></i>
+                                    <span class="text-light">3</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="countdown mb-4 bg-primary w-100">
+                        <div class="cd-content p-4">
+                            <div class="cd-inner d-flex justify-content-around text-light">
+                                <div class="day d-flex flex-column text-center text-light">
+                                    <span class="number">94</span>
+                                    <span class="lable">Days</span>
+                                </div>
+                                <div class="number">:</div>
+                                <div class="day d-flex flex-column text-center text-light">
+                                    <span class="number">22</span>
+                                    <span class="lable">Hours</span>
+                                </div>
+                                <div class="number">:</div>
+                                <div class="day d-flex flex-column text-center text-light">
+                                    <span class="number">19</span>
+                                    <span class="lable">Minutes</span>
+                                </div>
+                                <div class="number">:</div>
+                                <div class="day d-flex flex-column text-center text-light">
+                                    <span class="number">40</span>
+                                    <span class="lable">Seconds</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart mb-4 p-3 bg-light w-100">
+                        <div class="chatr-content d-flex align-items-start">
+                            <div class="heading">
+                                <h5>Column Chart</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course mb-4 w-100">
+                        <div class="row p-0 m-0">
+                            <div class="course1 col-6 p-0 pe-3">
+                                <article class="cou bg-light position-relative">
+                                    <div class="pill rounded-pill bg-primary text-light position-absolute text-uppercase px-2 py-1">In Progress</div>
+                                    <a href="#">
+                                        <img src="img/course1.jpg" alt="" width="100%" height="200">
+                                    </a>
+                                    <div class="caption d-flex flex-column p-4">
+                                        <div class="cap-heading text-wrap">
+                                            <h5>Adobe Illustrator Course for Beginners</h5>
+                                        </div>
+                                        <div class="mt-2">
+                                            <div class="progress mb-3" style="height: 4px;">
+                                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="light">90% Complete</div>
+                                            <div class="light">Last activity on February 9, 2025 6:42 pm</div>
+                                        </div>
+                                        <div class="mt-3">
+                                            <button type="button" class="btn btn-outline-dark rounded-pill btn-sm w-100 py-2">View More</button>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="course2 col-6 p-0 ps-3">
+                                <article class="cou bg-light position-relative">
+                                    <div class="pill rounded-pill bg-success text-light position-absolute text-uppercase px-2 py-1">completed</div>
+                                    <a href="#">
+                                        <img src="img/course2.jpg" alt="" width="100%" height="200">
+                                    </a>
+                                    <div class="caption d-flex flex-column p-4">
+                                        <div class="cap-heading text-wrap">
+                                            <h5>Web Design for Beginners with Practice</h5>
+                                        </div>
+                                        <div class="mt-2">
+                                            <div class="progress mb-3" style="height: 4px;">
+                                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="light">100% Complete</div>
+                                            <div class="light">Last activity on December 15, 2022 10:14 am</div>
+                                        </div>
+                                        <div class="mt-3">
+                                            <button type="button" class="btn btn-outline-dark rounded-pill btn-sm w-100 py-2">View More</button>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tech mb-4 w-100">
+                        <div class="tech-content p-4">
+                            <div class="sub-heading rounded-pill bg-primary d-inline">
+                                <span>
+                                    <a class="px-3 py-2 text-uppercase text-light text-center align-middle" href="#">Technology</a>
+                                </span>
+                            </div>
+                            <h4 class="mt-3">
+                                <a href="#" class="text-light">16 Best Tools for Planning Creative Projects</a>
+                            </h4>
+                            <div class="date mt-3 text-light">
+                                <span class="pe-2">April 6, 2020</span>
+                                <a href="#" class="pe-2">
+                                    <i class="fa-solid fa-heart text-danger"></i>
+                                    <span class="text-light">13</span>
+                                </a>
+                                <a href="#" class="pe-2">
+                                    <i class="fa-solid fa-comment text-warning"></i>
+                                    <span class="text-light">0</span>
+                                </a>
+                            </div> 
+                            <div class="music mt-3 py-2 px-3 bg-dark small-round-corner">
+                                <div class="music-content d-flex flex-row align-items-center">
+                                    <div class="play-icon text-light pe-2">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                    <div class="m-currenttime px-2" style="font-size: 12px; color: #96999f;">
+                                        <span>00:00</span>
+                                    </div>
+                                    <div class="music-timebar flex-grow-1 px-2">
+                                        <span class="timebar"></span>
+                                    </div>
+                                    <div class="m-totaltime px-2" style="font-size: 12px; color: #96999f;">
+                                        <span>00:00</span>
+                                    </div>
+                                    <div class="volume-icon text-light ms-3">
+                                        <i class="fa-solid fa-volume-high"></i>
+                                    </div>
+                                    <div class="vol-bar ps-2">
+                                        <span class="volbar"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job mb-4 w-100 bg-light">
+                        <div class="job-content p-4 d-flex flex-wrap align-content-start">
+                            <div class="job-heading border-bottom w-100 mb-4">
+                                <h5 class="mb-3">Recent Jobs</h5>
+                        </div>
+                        <div class="job-dis">
+                            <form action="">
+                                <div class="search-job d-flex justify-content-between rounded bg-secondary p-3">
+                                    <div class="search-keyword rounded-pill bg-light me-3">
+                                        <i class="fas fa-search ps-2"></i>
+                                        <input type="text" name="keyword"  id="" placeholder="Keywords" class="w-50 border-0 rounded-pill">
+                                    </div>
+                                    <div class="search-keyword rounded-pill bg-light me-3 align-middle">
+                                        <i class="fa-solid fa-location-dot ps-2"></i>
+                                        <input type="text" name="keyword"  id="" placeholder="Location" class="w-50 border-0 rounded-pill">
+                                    </div>
+                                    <div class="search-submit">
+                                        <input type="submit" value="SEARCH" class="bg-danger text-light px-2 rounded-pill">
+                                    </div>
+                                </div>
+                                <ul class="job-type mt-3" style="font-size: 12px; height: 30px;">
+                                    <li class="py-1 me-3 float-start">
+                                        <input type="checkbox" name="freelance" id="freelance" checked>
+                                        <label for="freelance" class="ps-1">Freelance</label>
+                                    </li>
+                                    <li class="py-1 me-3 float-start">
+                                        <input type="checkbox" name=" Full Time" id=" Full Time" checked>
+                                        <label for=" Full Time" class="ps-1"> Full Time</label>
+                                    </li>
+                                    <li class="py-1 me-3 float-start">
+                                        <input type="checkbox" name="Internship" id="Internship" checked>
+                                        <label for="Internship" class="ps-1">Internship</label>
+                                    </li>
+                                    <li class="py-1 me-3 float-start">
+                                        <input type="checkbox" name="Part Time" id="Part Time" checked>
+                                        <label for="Part Time" class="ps-1">Part Time</label>
+                                    </li>
+                                    <li class="py-1 me-3 float-start">
+                                        <input type="checkbox" name="Temporary" id="Temporary" checked>
+                                        <label for="Temporary" class="ps-1">Temporary</label>
+                                    </li>
+                                </ul>
+                                <div class="showing-job bg-secondary text-end">
+                                    <a href="#" class="pe-2 text-primary">RSS</a>
+                                </div>
+                            </form>
+                            <ul class="job-listing mt-3">
+                                <li class="py-3 border-top">
+                                    <a href="#" class="d-flex justify-content-start">
+                                        <img src="img/job1.jpg" alt="" width="35" height="35" class="rounded-circle">
+                                        <div class="position px-3 flex-fill">
+                                            <h6 class="mb-0" style="font-size: 15px;">Office Administrator</h6>
+                                            <div class="company">
+                                                <p class="mb-0" style="font-size: 13px; color: #9c9da1;">Green Line</p>
+                                            </div>
+                                        </div>
+                                        <div class="location col-2">
+                                            <p class="mb-0" style="font-size: 13px; color: #9c9da1;">Boston</p>
+                                        </div>
+                                        <div class="time col-3 text-end">
+                                            <div style="font-size: 15px;" class="text-primary">Part Time</div>
+                                            <div>
+                                                <p class="mb-0" style="font-size: 12px; color: #9c9da1;">Posted 3 years ago</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="py-3 border-top">
+                                    <a href="#" class="d-flex justify-content-start">
+                                        <img src="img/job-2.jpg" alt="" width="35" height="35" class="rounded-circle">
+                                        <div class="position px-3 flex-fill">
+                                            <h6 class="mb-0" style="font-size: 15px;">Fundraising Manager</h6>
+                                            <div class="company">
+                                                <p class="mb-0" style="font-size: 13px; color: #9c9da1;">Ribbons</p>
+                                            </div>
+                                        </div>
+                                        <div class="location col-2">
+                                            <p class="mb-0" style="font-size: 13px; color: #9c9da1;">London</p>
+                                        </div>
+                                        <div class="time col-3 text-end">
+                                            <div style="font-size: 15px;" class="text-primary">Full Time</div>
+                                            <div>
+                                                <p class="mb-0" style="font-size: 12px; color: #9c9da1;">Posted 3 years ago</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="py-3 border-top border-bottom">
+                                    <a href="#" class="d-flex justify-content-start">
+                                        <img src="img/job-3.jpg" alt="" width="35" height="35" class="rounded-circle">
+                                        <div class="position px-3 flex-fill">
+                                            <h6 class="mb-0" style="font-size: 15px;">Data Intelligence Specialist</h6>
+                                            <div class="company">
+                                                <p class="mb-0" style="font-size: 13px; color: #9c9da1;">PLC</p>
+                                            </div>
+                                        </div>
+                                        <div class="location col-2">
+                                            <p class="mb-0" style="font-size: 13px; color: #9c9da1;">New York</p>
+                                        </div>
+                                        <div class="time col-3 text-end">
+                                            <div style="font-size: 15px;" class="text-primary">Internship</div>
+                                            <div>
+                                                <p class="mb-0" style="font-size: 12px; color: #9c9da1;">Posted 3 years ago</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="load-more-job text-uppercase mt-4" style="font-size: 11px;">
+                                <a href="#">
+                                    Load more listings
+                                    <i class="fa-solid fa-circle-arrow-right ps-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="news w-100 bg-light">
+                        <div class="news-content p-4">
+                            <div class="news-heading pb-3 mb-3 border-bottom">
+                                <h5>Featured News</h5>
+                            </div>
+                            <div class="news-info">
+                                <article class="news1 d-flex flex-row">
+                                    <div class="news-img col-5 rounded">
+                                    </div>
+                                    <div class="post-content ps-3 d-flex flex-column">
+                                        <div class="post-header">
+                                            <div class="sub-header" style="font-size: 12px;">
+                                                <span class="text-uppercase fw-bolder pe-2"><a href="#">Digital</a></span>
+                                                <span><a style="color: #9C9DA1;" href="#">January 14, 2022</a></span>
+                                            </div>
+                                            <h6 class="mt-2"><a href="#">Making an Online Portfolio to Impress Clients</a></h6>
+                                        </div>
+                                        <div class="post-inner mt-1">
+                                            <p style="font-size: 14px; color: #9C9DA1;">Dem ut perspiciatis unde omnis iste natus error sit voluptatem…</p>
+                                        </div>
+                                        <div class="post-like" style="font-size: 12px;">
+                                            <a href="#" class="pe-2">
+                                                <i class="fa-solid fa-heart text-danger"></i>
+                                                <span style="color: #9C9DA1;">14</span>
+                                            </a>
+                                            <a href="#" class="pe-2">
+                                                <i class="fa-solid fa-comment text-warning"></i>
+                                                <span style="color: #9C9DA1;">2</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="news2 d-flex flex-row pt-4 mt-4 border-top">
+                                    <div class="news-img2 col-5 rounded">
+                                    </div>
+                                    <div class="post-content ps-3 d-flex flex-column">
+                                        <div class="post-header">
+                                            <div class="sub-header" style="font-size: 12px;">
+                                                <span class="text-uppercase fw-bolder pe-2"><a href="#">Digital</a></span>
+                                                <span><a style="color: #9C9DA1;" href="#">January 14, 2022</a></span>
+                                            </div>
+                                            <h6 class="mt-2"><a href="#">Reasons Developers Should Use Webflow</a></h6>
+                                        </div>
+                                        <div class="post-inner mt-1">
+                                            <p style="font-size: 14px; color: #9C9DA1;">Dem ut perspiciatis unde omnis iste natus error sit voluptatem…</p>
+                                        </div>
+                                        <div class="post-like" style="font-size: 12px;">
+                                            <a href="#" class="pe-2">
+                                                <i class="fa-solid fa-heart text-danger"></i>
+                                                <span style="color: #9C9DA1;">30</span>
+                                            </a>
+                                            <a href="#" class="pe-2">
+                                                <i class="fa-solid fa-comment text-warning"></i>
+                                                <span style="color: #9C9DA1;">1</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="news3 d-flex flex-row pt-4 mt-4 border-top">
+                                    <div class="news-img3 col-5 rounded">
+                                    </div>
+                                    <div class="post-content ps-3 d-flex flex-column">
+                                        <div class="post-header">
+                                            <div class="sub-header" style="font-size: 12px;">
+                                                <span class="text-uppercase fw-bolder pe-2"><a href="#">Digital</a></span>
+                                                <span><a style="color: #9C9DA1;" href="#">January 14, 2022</a></span>
+                                            </div>
+                                            <h6 class="mt-2"><a href="#">What to Keep in Mind when Redesigning a Website</a></h6>
+                                        </div>
+                                        <div class="post-inner mt-1">
+                                            <p style="font-size: 14px; color: #9C9DA1;">Dem ut perspiciatis unde omnis iste natus error sit voluptatem…</p>
+                                        </div>
+                                        <div class="post-like" style="font-size: 12px;">
+                                            <a href="#" class="pe-2">
+                                                <i class="fa-solid fa-heart text-danger"></i>
+                                                <span style="color: #9C9DA1;">29</span>
+                                            </a>
+                                            <a href="#" class="pe-2">
+                                                <i class="fa-solid fa-comment text-warning"></i>
+                                                <span style="color: #9C9DA1;">1</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="news-all text-uppercase mt-4 pt-4 border-top" style="font-size: 11px;">
+                                <a href="#">
+                                    View All
+                                    <i class="fa-solid fa-circle-arrow-right ps-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-25 d-flex col-3">
+                <div class="col-25-content d-flex align-content-start flex-wrap px-3 w-100">
+                    <div class="warning round-corner mb-4 w-100">
+                        <div class="warning-content p-4 text-light">
+                            <div class="warning-btn d-flex justify-content-between">
+                                <i class="fa-solid fa-triangle-exclamation" style="font-size: 40px;"></i>
+                                <button type="button" class="btn-close border border-2 rounded-circle p-2" aria-label="Close"></button>
+                            </div>
+                            <div class="heading mt-3">
+                                <h3>Warning</h3>
+                            </div>
+                            <div class="dis mt-2">
+                                <p class="mb-4">The office will be closed on the 1.07!</p>
+                                <p class="border-top pt-2 mb-0" style="opacity: 0.8;"><small>Important Notification</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="l-news round-corner mb-4 bg-light w-100">
+                        <div class="l-news-content p-4">
+                            <div class="l-news-heading pb-3 border-bottom">
+                                <h5>Latest News</h5>
+                            </div>
+                            <div class="news-blog">
+                                <div class="blog1 pb-3">
+                                    <div class="blog-img">
+                                        <img src="img/blog1.jpg" alt="" width="100%">
+                                    </div>
+                                    <div class="blog-content mt-3">
+                                        <div class="blog-sub-heading" style="font-size: 12px;">
+                                            <span class="text-uppercase fw-bolder pe-2"><a href="#">Digital</a></span>
+                                            <span><a style="color: #9C9DA1;" href="#">January 14, 2022</a></span>
+                                        </div>
+                                        <div class="blog-heading mt-2">
+                                            <h5 style="font-size: 18px;"><a href="#">Getting Started in SEO? Experts Share Helpful Tips</a></h5>
+                                        </div>
+                                        <div class="blog-like" style="font-size: 12px;">
+                                            <a href="#" class="pe-2">
+                                                <i class="fa-solid fa-heart text-danger"></i>
+                                                <span style="color: #9C9DA1;">13</span>
+                                            </a>
+                                            <a href="#" class="pe-2">
+                                                <i class="fa-solid fa-comment text-warning"></i>
+                                                <span style="color: #9C9DA1;">3</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blog2 pb-3">
+                                    <div class="blog-img">
+                                        <img src="img/blog2.jpg" alt="" width="100%">
+                                    </div>
+                                    <div class="blog-content mt-3">
+                                        <div class="blog-sub-heading" style="font-size: 12px;">
+                                            <span class="text-uppercase fw-bolder pe-2"><a href="#">Digital</a></span>
+                                            <span><a style="color: #9C9DA1;" href="#">January 14, 2022</a></span>
+                                        </div>
+                                        <div class="blog-heading mt-2">
+                                            <h5 style="font-size: 18px;"><a href="#">Inspiring Design Trends for Artists</a></h5>
+                                        </div>
+                                        <div class="blog-like" style="font-size: 12px;">
+                                            <a href="#" class="pe-2">
+                                                <i class="fa-solid fa-heart text-danger"></i>
+                                                <span style="color: #9C9DA1;">14</span>
+                                            </a>
+                                            <a href="#" class="pe-2">
+                                                <i class="fa-solid fa-comment text-warning"></i>
+                                                <span style="color: #9C9DA1;">0</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blog3">
+                                    <div class="blog-img">
+                                        <img class="small-round-corner" src="img/blog3.jpg" alt="" width="100%">
+                                    </div>
+                                    <div class="blog-content mt-3">
+                                        <div class="blog-sub-heading" style="font-size: 12px;">
+                                            <span class="text-uppercase fw-bolder pe-2"><a href="#">Digital</a></span>
+                                            <span><a style="color: #9C9DA1;" href="#">January 14, 2022</a></span>
+                                        </div>
+                                        <div class="blog-heading mt-2">
+                                            <h5 style="font-size: 18px;"><a href="#">Unique Website Ideas for a Successful Business Project</a></h5>
+                                        </div>
+                                        <div class="blog-like" style="font-size: 12px;">
+                                            <a href="#" class="pe-2">
+                                                <i class="fa-solid fa-heart text-danger"></i>
+                                                <span style="color: #9C9DA1;">18</span>
+                                            </a>
+                                            <a href="#" class="pe-2">
+                                                <i class="fa-solid fa-comment text-warning"></i>
+                                                <span style="color: #9C9DA1;">2</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="t-news round-corner mb-4 bg-light w-100">
+                        <div class="t-news-content p-4">
+                            <div class="t-news-heading border-bottom pb-2 mb-4">
+                                <h5>Tech News</h5>
+                            </div>
+                            <div class="t-news-header d-flex">
+                                <span>
+                                    <img class="rounded-circle" src="img/t-news-header.png" alt="" height="48" width="48">
+                                </span>
+                                <div class="d-flex flex-column justify-content-center ps-3">
+                                    <span style="font-size: 15px;"><a href="#">Anna Smith</a></span>
+                                    <span style="font-size: 12px;"><a style="color: #9C9DA1;" href="#">April 5, 2020</a></span>
+                                </div>
+                            </div>
+                            <div class="t-news-body mt-3">
+                                <div class="t-news-img">
+                                    <img class="small-round-corner" src="img/t-news-body.jpg" alt="" width="100%">
+                                </div>
+                                <div class="body-content mt-3">
+                                    <h5 style="font-size: 18px;"><a href="#">Implementing Infinite Scroll and Image Lazy Loading in React</a></h5>
+                                    <div class="mt-2" style="font-size: 14px;color: #9C9DA1;">Develop your signature photographic style.</div>
+                                    <div class="t-mews-like mt-2" style="font-size: 12px;">
+                                        <a href="#" class="pe-2">
+                                            <i class="fa-solid fa-heart text-danger"></i>
+                                            <span style="color: #9C9DA1;">13</span>
+                                        </a>
+                                        <a href="#" class="pe-2">
+                                            <i class="fa-solid fa-comment text-warning"></i>
+                                            <span style="color: #9C9DA1;">0</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news-btn text-uppercase mt-4 pt-4 border-top" style="font-size: 11px;">
+                                <a href="#">
+                                    View All
+                                    <i class="fa-solid fa-circle-arrow-right ps-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ancm round-corner mb-4 bg-light w-100">
+                        <div class="ancm-content p-4">
+                            <div class="sub-title text-uppercase">
+                                <a style="font-size: 11px;" href="#">Announcements</a>
+                            </div>
+                            <div class="ancm-date">
+                                <span><a style="color: #9C9DA1;font-size: 12px;" href="#">April 5, 2020</a></span>
+                            </div>
+                            <div class="ancm-heading mt-1 pe-3">
+                                <h5 style="font-size: 18px;"><a href="#">10 Best Tips for Planning Commercial Projects</a></h5>
+                            </div>
+                            <div class="t-mews-like mt-2" style="font-size: 12px;">
+                                <a href="#" class="pe-2">
+                                    <i class="fa-solid fa-heart text-danger"></i>
+                                    <span style="color: #9C9DA1;">16</span>
+                                </a>
+                                <a href="#" class="pe-2">
+                                    <i class="fa-solid fa-comment text-warning"></i>
+                                    <span style="color: #9C9DA1;">6</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="members round-corner mb-4 bg-light w-100">
+                        <div class="members-content p-4">
+                            <div class="mem-heading border-bottom pb-2 mb-3">
+                                <h5>Members
+                                    <span class="ms-3 px-3 py-1 bg-danger rounded-pill text-light" style="font-size: 12px;">6</span>
+                                </h5>
+                            </div>
+                            <div class="options">
+                                <a class="rounded-pill px-2 py-1 text-uppercase" href="#">Newest</a>
+                                <a class="rounded-pill px-2 py-1 text-uppercase" href="#">Active</a>
+                                <a class="rounded-pill px-2 py-1 text-uppercase" href="#">Popular</a>
+                            </div>
+                            <div class="member-list mt-3">
+                                <div class="member1 d-flex">
+                                    <span>
+                                        <img class="rounded-circle" src="img/member1.jpg" alt="" height="60" width="60">
+                                    </span>
+                                    <div class="d-flex flex-column justify-content-center ps-3">
+                                        <span style="font-size: 15px;"><a href="#">Jack Black</a></span>
+                                        <span class="text-uppercase" style="font-size: 11px;"><a style="color: #9C9DA1;" href="#">Active right now</a></span>
+                                    </div>
+                                </div>
+                                <div class="member2 d-flex mt-3">
+                                    <span>
+                                        <img class="rounded-circle" src="img/t-news-header.png" alt="" height="60" width="60">
+                                    </span>
+                                    <div class="d-flex flex-column justify-content-center ps-3">
+                                        <span style="font-size: 15px;"><a href="#">Anna Smith</a></span>
+                                        <span class="text-uppercase" style="font-size: 11px;"><a style="color: #9C9DA1;" href="#">Active 1 week, 1 day ago</a></span>
+                                    </div>
+                                </div>
+                                <div class="member3 d-flex mt-3">
+                                    <span>
+                                        <img class="rounded-circle" src="img/member3.png" alt="" height="60" width="60">
+                                    </span>
+                                    <div class="d-flex flex-column justify-content-center ps-3">
+                                        <span style="font-size: 15px;"><a href="#">Anna Smith</a></span>
+                                        <span class="text-uppercase" style="font-size: 11px;"><a style="color: #9C9DA1;" href="#">Active 2 years, 3 months ago</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news-btn text-uppercase mt-4 pt-4 border-top" style="font-size: 11px;">
+                                <a href="#">
+                                    View All
+                                    <i class="fa-solid fa-circle-arrow-right ps-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills mb-4 w-100">
+                        <div class="skills-contant d-flex  justify-content-between flex-row">
+                            <div class="skill1 round-corner bg-primary p-3 text-center text-light">
+                                <div class="skill-icon" >
+                                    <i class="fa-solid fa-bullseye" style="font-size: 49px;"></i>
+                                </div>
+                                <div class="skill-number mt-1" style="font-size: 25px;">457</div>
+                                <div class="skill-title text-uppercase" style="font-size: 10px;">Themes</div>
+                            </div>
+                            <div class="skill2 round-corner bg-success p-3 text-center text-light">
+                                <div class="skill-icon mt-1" >
+                                    <i class="fa-solid fa-trophy" style="font-size: 40px;"></i>
+                                </div>
+                                <div class="skill-number mt-2" style="font-size: 25px;">562</div>
+                                <div class="skill-title text-uppercase" style="font-size: 10px;">Awards</div>
+                            </div>
+                            <div class="skill2 round-corner bg-light p-3 text-center">
+                                <div class="skill-icon mt-1" >
+                                    <i class="fa fa-diamond" aria-hidden="true" style="font-size: 40px;"></i>
+                                </div>
+                                <div class="skill-number mt-2" style="font-size: 25px;">789</div>
+                                <div class="skill-title text-uppercase" style="font-size: 10px;">Pixels</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rt round-corner mb-4 bg-light w-100">
+                        <div class="rt-content p-4">
+                            <div class="rt-heading border-bottom pb-2 mb-4">
+                                <h5>Recent Topics</h5>
+                            </div>
+                            <div class="topics">
+                                <div class="topic1 d-flex">
+                                    <span>
+                                        <img class="rounded-circle" src="img/member1.jpg" alt="" height="60" width="60">
+                                    </span>
+                                    <div class="d-flex flex-column justify-content-center ps-3">
+                                        <span style="font-size: 15px;"><a href="#">Business analyst content for fresher</a></span>
+                                        <span class="text-uppercase" style="font-size: 11px;"><a style="color: #9C9DA1;" href="#">By Jack Black</a></span>
+                                    </div>
+                                </div>
+                                <div class="topic2 d-flex mt-3">
+                                    <span>
+                                        <img class="rounded-circle" src="img/member1.jpg" alt="" height="60" width="60">
+                                    </span>
+                                    <div class="d-flex flex-column justify-content-center ps-3">
+                                        <span style="font-size: 15px;"><a href="#">ABC</a></span>
+                                        <span class="text-uppercase" style="font-size: 11px;"><a style="color: #9C9DA1;" href="#">By Jack Black</a></span>
+                                    </div>
+                                </div>
+                                <div class="topic1 d-flex mt-3">
+                                    <span>
+                                        <img class="rounded-circle" src="img/member1.jpg" alt="" height="60" width="60">
+                                    </span>
+                                    <div class="d-flex flex-column justify-content-center ps-3">
+                                        <span style="font-size: 15px;"><a href="#">Este es un nuevo tema en el grupo de arte</a></span>
+                                        <span class="text-uppercase" style="font-size: 11px;"><a style="color: #9C9DA1;" href="#">By Jack Black</a></span>
+                                    </div>
+                                </div>
+                                <div class="topic1 d-flex mt-3">
+                                    <span>
+                                        <img class="rounded-circle" src="img/member1.jpg" alt="" height="60" width="60">
+                                    </span>
+                                    <div class="d-flex flex-column justify-content-center ps-3">
+                                        <span style="font-size: 15px;"><a href="#">New Years Art festival</a></span>
+                                        <span class="text-uppercase" style="font-size: 11px;"><a style="color: #9C9DA1;" href="#">By Jack Black</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-25 d-flex col-3">
+                <div class="col-25-content d-flex align-content-start flex-wrap px-3 w-100">
+                    <div class="calendar round-corner mb-4 bg-light w-100">
+                        <div class="cal-img">
+                            <img src="img/calender-bg.jpg" alt="" width="100%" height="231">
+                        </div>
+                        <div class="cal-inner p-4">
+                            <table class="w-100 caption-top">
+                                <caption class="text-center pb-2 mb-2 border-bottom" style="color: #071021;">February 2025</caption>
+                                <thead>
+                                    <tr>
+                                        <th>M</th>
+                                        <th>T</th>
+                                        <th>W</th>
+                                        <th>T</th>
+                                        <th>F</th>
+                                        <th>S</th>
+                                        <th>S</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="5">&nbsp;</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>4</td>
+                                        <td>5</td>
+                                        <td>6</td>
+                                        <td>7</td>
+                                        <td>8</td>
+                                        <td>9</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>11</td>
+                                        <td>12</td>
+                                        <td>13</td>
+                                        <td>14</td>
+                                        <td>15</td>
+                                        <td>16</td>
+                                    </tr>
+                                    <tr>
+                                        <td>17</td>
+                                        <td>18</td>
+                                        <td>19</td>
+                                        <td>20</td>
+                                        <td>21</td>
+                                        <td>22</td>
+                                        <td>23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>24</td>
+                                        <td>25</td>
+                                        <td>26</td>
+                                        <td>27</td>
+                                        <td>28</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="next-month pt-3 mt-3">
+                                <a href="#">
+                                    <i class="fa-solid fa-chevron-left ps-2" style="font-size: 12px;"></i>
+                                    <span class="ps-2">Jan</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prog-bar round-corner mb-4 bg-light w-100">
+                        <div class="pb-content p-4">
+                            <div class="pb-heading border-bottom pb-2 mb-3">
+                                <h5>Progress Bar</h5>
+                            </div>
+                            <div class="pb-item">
+                                <div class="pb-title d-flex justify-content-between" style="font-size: 15px;">
+                                    <span>Web Designer</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="progress mt-2" style="height: 6px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                            </div>
+                            <div class="pb-item mt-3">
+                                <div class="pb-title d-flex justify-content-between" style="font-size: 15px;">
+                                    <span>Development</span>
+                                    <span>60%</span>
+                                </div>
+                                <div class="progress mt-2" style="height: 6px;">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                            </div>
+                            <div class="pb-item mt-3">
+                                <div class="pb-title d-flex justify-content-between" style="font-size: 15px;">
+                                    <span>Support</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="progress mt-2" style="height: 6px;">
+                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonials round-corner mb-4 bg-light w-100">
+                        <div class="testi-content p-4">
+                            <div class="testi-heading border-bottom pb-2 mb-3">
+                                <h5>Testimonials</h5>
+                            </div>
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star text-warning"></i></span>
+                                <span><i class="fa-solid fa-star text-warning"></i></span>
+                                <span><i class="fa-solid fa-star text-warning"></i></span>
+                                <span><i class="fa-solid fa-star text-warning"></i></span>
+                                <span><i class="fa-solid fa-star text-warning"></i></span>
+                            </div>
+                            <div class="mt-2">
+                                <p>You guys are awesome! It was an absolute pleasure doing business with you.</p>
+                            </div>
+                            <div class="testi-auther d-flex">
+                                <span>
+                                    <img class="rounded-circle" src="img/auther.jpg" alt="" height="48" width="48">
+                                </span>
+                                <div class="d-flex flex-column justify-content-center ps-3">
+                                    <span style="font-size: 15px;"><a href="#">Nayan McKee</a></span>
+                                    <span class="text-uppercase" style="font-size: 12px;"><a style="color: #9C9DA1;" href="#">Manager</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="opinion round-corner mb-4 bg-light w-100">
+                        <div class="opinion-content p-4">
+                            <div class="opinion-heading pb-2 mb-3 border-bottom">
+                                <h5>Your Opinion</h5>
+                            </div>
+                            <div class="opinion-body" style="color: #7a7e83;">
+                                <p style="font-size: 14px;">If today is Tuesday, then what day will come after 3 days from today?</p>
+                                <form action=" " style="font-size: 12px; opacity: 0.8;">
+                                    <div class="mb-2">
+                                        <input type="radio" name="friday" id="friday">
+                                        <label for="friday">Friday</label>
+                                    </div>
+                                    <div class="mb-2">
+                                        <input type="radio" name="satueday" id="satueday">
+                                        <label for="satueday">Satueday</label>
+                                    </div>
+                                    <input type="radio" name="sunday" id="sunday">
+                                    <label for="sunday">Sunday</label>
+                                </form>
+                                <div class="opinion-btn text-center mt-3">
+                                    <input class="btn btn-primary rounded-pill px-4 py-2" style="font-size: 11px;" type="submit" value="VOTE">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pie-chart round-corner mb-4 bg-light w-100">
+                        <div class="pie-chart-content p-4">
+                            <div class="pie-chart-heading border-bottom pb-2 mb-3">
+                                <h5>Pie Chart​</h5>
+                            </div>
+                            <div class="chart-img" style="height: 300px;">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tools mb-4 w-100">
+                        <div class="tools-content">
+                            <div class="row mx-0 gap-3">
+                                <div class="google-drive col round-corner bg-light px-3 pt-4 pb-2 text-center">
+                                    <figure>
+                                        <img src="img/google-drive.webp" alt="" width="48" height="41">
+                                    </figure>
+                                    <div class="tilte w-100">
+                                        <h6 style="font-size: 14px;">Google Drive</h6>
+                                    </div>
+                                </div>
+                                <div class="dropbox col round-corner bg-light px-3 pt-4 pb-2 text-center">
+                                    <figure>
+                                        <img src="img/dropbox.webp" alt="" width="48" height="46">
+                                    </figure>
+                                    <div class="tilte w-100">
+                                        <h6 style="font-size: 14px;">Dropbox</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mx-0 my-3 gap-3">
+                                <div class="slack col round-corner bg-light pt-4 pb-2 text-center">
+                                    <figure>
+                                        <img src="img/slack.webp" alt="" width="48" height="48">
+                                    </figure>
+                                    <div class="tilte w-100">
+                                        <h6 style="font-size: 14px;">Slack</h6>
+                                    </div>
+                                </div>
+                                <div class="creative-cloud col round-corner bg-light pt-4 pb-2 text-center">
+                                    <figure>
+                                        <img src="img/adobe.webp" alt="" width="48" height="36">
+                                    </figure>
+                                    <div class="tilte w-100">
+                                        <h6 style="font-size: 14px;">Creative Cloud</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row m-0 gap-3">
+                                <div class="dribbble col round-corner bg-light px-3 pt-4 pb-2 text-center">
+                                    <figure>
+                                        <img src="img/dribbble.webp" alt="" width="48" height="48">
+                                    </figure>
+                                    <div class="tilte w-100">
+                                        <h6 style="font-size: 14px;">Dribble</h6>
+                                    </div>
+                                </div>
+                                <div class="sketch col round-corner bg-light px-3 pt-4 pb-2 text-center">
+                                    <figure>
+                                        <img src="img/sketch.webp" alt="" width="48" height="45">
+                                    </figure>
+                                    <div class="tilte w-100">
+                                        <h6 style="font-size: 14px;">Sketch</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="newsletter round-corner mb-4 bg-light w-100">
+                        <div class="newsletter-content p-4">
+                            <div class="newsletter-icon">
+                                <i class="fa-regular fa-envelope-open" style="font-size: 44px;"></i>
+                            </div>
+                            <div class="newsletter-heading mt-3">
+                                <h3>Newsletter</h3>
+                                <p class="">Check Latest Updates</p>
+                            </div>
+                            <form action="">
+                                <div class="email border rounded-pill ps-4 pe-1 d-flex align-items-center">
+                                    <div class="input align-middle">
+                                        <input type="email" name="email" id="email" placeholder="YUOR EMAIL" class="border-0 w-75" style="font-size: 11px;">
+                                        <input type="submit" value="">
+                                    </div>
+                                    <div class="icon">
+                                        <i class="fa-solid fa-arrow-right rounded-circle bg-dark p-3 text-end text-light"></i>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="imp mt-3" style="font-size: 13px;">
+                                <i class="fa-solid fa-circle-info"></i>
+                                <span>Important Notification</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="f-events round-corner mb-4 bg-light w-100">
+                        <div class="f-events-content p-4">
+                            <div class="f-evemts-heding border-bottom pb-2 mb-3">
+                                <h5>Featured Events</h5>
+                            </div>
+                            <div class="f-events-item">
+                                <div class="item1 d-flex">
+                                    <div class="col-3 text-center">
+                                        <p class="rounded-top m-0 py-1" style="font-size: 20px; background-color: #f1f3f6;">02</p>
+                                        <p class="rounded-bottom m-0 py-1 text-light" style="font-size: 12px; background-color: #071021;">FEB</p>
+                                    </div>
+                                    <div class="inner ps-4">
+                                        <div class="title">
+                                           <h6><a href="#">WordCamp New York</a></h6>
+                                        </div>
+                                        <div class="text-uppercase" style="color: #9C9DA1;font-size: 11px;"><span>February 2, 2024 8:00 am</span></div>
+                                        <div class="fw-bolder mt-1" style="font-size: 11px;">$95</div>
+                                    </div>
+                                </div>
+                                <div class="item2 d-flex border-top pt-3 mt-3">
+                                    <div class="col-3 text-center">
+                                        <p class="rounded-top m-0 py-1" style="font-size: 20px; background-color: #f1f3f6;">12</p>
+                                        <p class="rounded-bottom m-0 py-1 text-light" style="font-size: 12px; background-color: #071021;">FEB</p>
+                                    </div>
+                                    <div class="inner ps-4">
+                                        <div class="title">
+                                           <h6><a href="#">E-Commerce Conference</a></h6>
+                                        </div>
+                                        <div class="text-uppercase" style="color: #9C9DA1;font-size: 11px;"><span>February 12, 2024 6:00 pm</span></div>
+                                        <div class="fw-bolder mt-1" style="font-size: 11px;">$135</div>
+                                    </div>
+                                </div>
+                                <div class="item3 d-flex border-top pt-3 mt-3">
+                                    <div class="col-3 text-center">
+                                        <p class="rounded-top m-0 py-1" style="font-size: 20px; background-color: #f1f3f6;">14</p>
+                                        <p class="rounded-bottom m-0 py-1 text-light" style="font-size: 12px; background-color: #071021;">APR</p>
+                                    </div>
+                                    <div class="inner ps-4">
+                                        <div class="title">
+                                           <h6><a href="#">Picasso Exhibition</a></h6>
+                                        </div>
+                                        <div class="text-uppercase" style="color: #9C9DA1;font-size: 11px;"><span>April 14, 2024 5:00 pm</span></div>
+                                        <div class="fw-bolder mt-1" style="font-size: 11px;">$199</div>
+                                    </div>
+                                </div>
+                                <div class="news-btn text-uppercase mt-4 pt-4 border-top" style="font-size: 11px;">
+                                    <a href="#">
+                                        View All
+                                        <i class="fa-solid fa-circle-arrow-right ps-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <div class="courses round-corner bg-light mx-3">
+                <div class="courses-content">
+                    <div class="heading px-4 pt-4">
+                        <div class="d-flex justify-content-between border-bottom pb-3 mb-4">
+                            <div>
+                                <h5>All Courses</h5>
+                            </div>
+                            <div class="news-btn text-uppercase" style="font-size: 11px;">
+                                <a href="#">
+                                    View All
+                                    <i class="fa-solid fa-circle-arrow-right ps-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="courses-list d-flex ms-4 me-3 gap-4">
+                        <div class="list-item1 col pe-1 pb-4">
+                            <article class="cou bg-light position-relative">
+                                <div class="pill rounded-pill bg-success text-light position-absolute text-uppercase px-3 py-1">completed</div>
+                                <a href="#">
+                                    <img src="img/course-list-item1.jpg" alt="" width="100%" height="173" class="small-round-corner">
+                                </a>
+                                <div class="caption d-flex flex-column mt-3">
+                                    <div class="cap-heading text-wrap">
+                                        <h5 style="font-size: 19px;">Colors and Their Relationships</h5>
+                                    </div>
+                                    <div class="mt-2">
+                                        <div class="progress mb-3" style="height: 4px;">
+                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="light">100% Complete</div>
+                                        <div class="light">Last activity on June 21, 2022 6:14 pm</div>
+                                    </div>
+                                    <div class="mt-3">
+                                        <button type="button" class="btn btn-outline-dark rounded-pill btn-sm w-100 py-2">View More</button>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="list-item2 col pe-1 pb-4">
+                            <article class="cou bg-light position-relative">
+                                <div class="pill rounded-pill bg-success text-light position-absolute text-uppercase px-3 py-1">completed</div>
+                                <a href="#">
+                                    <img src="img/course-list-item2.jpg" alt="" width="100%" height="173" class="small-round-corner">
+                                </a>
+                                <div class="caption d-flex flex-column mt-3">
+                                    <div class="cap-heading text-wrap">
+                                        <h5 style="font-size: 19px;">Effective Communication for Today’s Leader</h5>
+                                    </div>
+                                    <div class="mt-2">
+                                        <div class="progress mb-3" style="height: 4px;">
+                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="light">100% Complete</div>
+                                        <div class="light">Last activity on June 22, 2022 10:00 am</div>
+                                    </div>
+                                    <div class="mt-3">
+                                        <button type="button" class="btn btn-outline-dark rounded-pill btn-sm w-100 py-2">View More</button>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="list-item3 col pe-1 pb-4">
+                            <article class="cou bg-light position-relative">
+                                <div class="pill rounded-pill bg-success text-light position-absolute text-uppercase px-3 py-1">completed</div>
+                                <a href="#">
+                                    <img src="img/course-list-item3.jpg" alt="" width="100%" height="173" class="small-round-corner">
+                                </a>
+                                <div class="caption d-flex flex-column mt-3">
+                                    <div class="cap-heading text-wrap">
+                                        <h5 style="font-size: 19px;">Successful Negotiation: Essential Strategies and Skills</h5>
+                                    </div>
+                                    <div class="mt-2">
+                                        <div class="progress mb-3" style="height: 4px;">
+                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="light">100% Complete</div>
+                                        <div class="light">Last activity on May 27, 2022 1:48 pm</div>
+                                    </div>
+                                    <div class="mt-3">
+                                        <button type="button" class="btn btn-outline-dark rounded-pill btn-sm w-100 py-2">View More</button>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="list-item4 col pe-2 pb-4">
+                            <article class="cou bg-light position-relative">
+                                <div class="pill rounded-pill bg-success text-light position-absolute text-uppercase px-3 py-1">completed</div>
+                                <a href="#">
+                                    <img src="img/course-list-item4.jpg" alt="" width="100%" height="173" class="small-round-corner">
+                                </a>
+                                <div class="caption d-flex flex-column mt-3">
+                                    <div class="cap-heading text-wrap">
+                                        <h5 style="font-size: 19px;">Digital Skills for Work and Life</h5>
+                                    </div>
+                                    <div class="mt-2">
+                                        <div class="progress mb-3" style="height: 4px;">
+                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="light">100% Complete</div>
+                                        <div class="light">Last activity on June 27, 2022 10:51 am</div>
+                                    </div>
+                                    <div class="mt-3">
+                                        <button type="button" class="btn btn-outline-dark rounded-pill btn-sm w-100 py-2">View More</button>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content px-4 pb-5 text-uppercase" style="font-size: 12px; color: #9C9DA1; letter-spacing: 1px;">
+            <a href="#" class="text-primary px-2">AncoraThemes</a>© 2025. All Rights Reserved.
+        </div>
+    </footer>
+
+    <div class="demo-tabs position-fixed top-50 end-0">
+        <a href="#" class="text-light bg-primary mb-1">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+        <a href="#" class="text-light bg-primary mb-1">
+            <i class="fa-solid fa-image"></i>
+        </a>
+        <a href="#" class="text-light bg-primary">
+            <i class="fa-solid fa-window-maximize"></i>
+        </a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
